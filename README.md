@@ -108,3 +108,7 @@ Como vimos na senha do servidor (Tabajiros8670) composta do nome da empresa, com
 Vimos aqui que uma vez que o atacante tem acesso a rede, pode-se comprometer de forma grave uma empresa, o teste realizado foi de um ataque de força bruta, porém é cabivel outros tipos de ataque também, como o *men-in-the-middle* , que pode capturar informações mais sérias do que é enviado a rede. 
 Também é perceptivel que uma simples segmentação em VLANs e senhas geradas aleatoriamente já dificultariam em muito a vida do atacante.
 Porém esse cenário, do qual a empresa fornece uma rede WiFi para clientes, que está no mesmo seguimento da rede corporativa, é muito comum. Fica esse laborátorio para além de cumprir os desafio do Bootcamp de segurança Riachuelo pela DIO, como uma forma de aprendizado para que possamos construir e configurar redes mais seguras.
+
+### Contato
+Email: tiworks@outlook.com
+Linkedin: https://www.linkedin.com/in/wendel-d-taveri/
