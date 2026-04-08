@@ -10,7 +10,7 @@ A intenção desse cenário é testar ataques em máquinas Windows e Windows Ser
 
 Para o atacante, foi utilizada uma máquina com Kali Linux e suas ferramentas nativas
 
-![Laboratorio.png](images/Laboratorio.png)
+![laboratorio.png](images/laboratorio.png)
 Laboratorio representa a empresa ficticia Tabajiros Ltda
 
 O Laborátorio representa a empresa ficticia **Tabajiros Ltda**(homenagem ao nome de uma empresa nostalgica de um antigo programa de humor), o número de telefone, endereços são ficticios, gerados por geradores de dados gratuitos na internet.
@@ -55,11 +55,11 @@ Após determinarmos o alvo, que o no nosso caso é o IP 192.168.100.250, e os se
 Para criar a ambas as listas usaremos a ferramenta CUPP, para isso acessamos sua pagina no GitHub: https://github.com/mebus/cupp
 Clonamos seu diretório com um `git clone https://github.com/mebus/cupp`. Damos permissões de execução para o CUPP com o `chmod+x` e depois podemos executa-lo com o comando `cupp -i`
 
-![Cupp.png](images/Cupp.png)
+![cupp.png](images/cupp.png)
 
 O Cupp perguntará vários dados como nome, sobrenome, endereços, numeros e etc. e com esses dados ele montará uma wordlist que podemos utilizar para nossos ataques. 
 
-![Worlist.png](images/Worlist.pngg)
+![worlist.png](images/worlist.png)
 
 Como podemos ver ele montou uma wordlist de senhas com 3109 combinações baseadas nos dados que fornecemos.
 
@@ -74,24 +74,24 @@ O Medusa é uma poderosa ferramenta que permite vários tipos de ataque de forç
 
 Com as listas (wordlists) prontas e o alvo determinado, vamos rodar o Medusa.
 
-![MedusaAtack1.png](images/MedusaAtack1.png)
+![medusaatack1.png](images/medusaatack1.png)
 
 Rodamos o Medusa passando para ele o IP do alvo, as wordlists, o serviço a ser atacado e o parâmetro -F para que ele pare o ataque assim que encontrar um sucesso.
 
-![MedusaAtack2.png](images/MedusaAtack2.png)
+![medusaatack2.png](images/medusaatack2.png)
 
 Encontrado um sucesso no usuário **Administrador** e com a senha **Tabajiros8670**.
 
 # Acessando o Servidor Alvo
 Agora com o usuário e a senha de administrador podemos acessar o servidor alvo e descobrir os segredos dentro dos arquivos da empresa.
 
-![AcessandoServidor.png](images/AcessandoServidor.png)
+![acessando_servidor.png](images/acessando_servidor.png)
 
 Como podemos ver as pastas Financeiro e Vendas estão acessiveis a nós, como usuário Administrador.
 
 Podemos também testar essa senha para outros protocolos, como o RDP e assim ter acesso completo ao servidor.
 
-![RDPatack2.png](images/RDPatack2.png)
+![rdpatack2.png](images/rdpatack2.png)
 
 # Corrijindo Vunerabilidades
 Como vimos, a empresa tabajiros está repleta de vulnerabilidades a serem exploradas. O gerente, seu Clayson, pediu para enumerarmos quais medidas poderiamos tomar para que a empresa não estivesse exposta dessa forma, vamos elencar algumas medidas e explica-las.
