@@ -1,0 +1,71 @@
+# O Desafio da DIO
+## Entendendo o Desafio
+
+Agora é a sua hora de brilhar e construir um perfil de destaque na DIO! Explore todos os conceitos abordados até aqui, aplique os conhecimentos adquiridos nas aulas e documente sua experiência para demonstrar sua compreensão dos temas discutidos.
+
+### Descrição do Desafio
+
+Implementar, documentar e compartilhar um projeto prático utilizando Kali Linux e a ferramenta Medusa, em conjunto com ambientes vulneráveis (por exemplo, Metasploitable 2 e DVWA), para simular cenários de ataque de força bruta e exercitar medidas de prevenção.
+
+- Configurar o ambiente: duas VMs (Kali Linux e Metasploitable 2) no VirtualBox, com rede interna (host-only).
+- Executar ataques simulados: força bruta em FTP, automação de tentativas em formulário web (DVWA) e password spraying em SMB com enumeração de usuários.
+- Documentar os testes: wordlists simples, comandos utilizados, validação de acessos e recomendações de mitigação.
+
+⚠️ Atenção: Este desafio é flexível! Você pode seguir os cenários propostos ou adaptar à sua realidade. O mais importante é demonstrar seu entendimento e compartilhar sua jornada de aprendizado.
+
+## Entrega do Desafio
+
+- Assistir a todas as vídeo-aulas
+- Criar um repositório público no GitHub contendo:
+  - Um arquivo README.md detalhado
+  - Arquivos adicionais relevantes
+  - Opcionalmente, capturas de tela organizadas
+
+# O Laboratório
+
+Visto que o desafio é flexível, resolvi adaptá-lo à realidade de uma pequena empresa, um cenário comum em diversos ambientes corporativos.
+
+Utilizei o PnetLab para configurar um pequeno laboratório com máquinas Windows, Windows Server, roteador Mikrotik e switch L2 Cisco.
+
+O laboratório representa a empresa fictícia Tabajiros Ltda.
+
+# Planejamento do Ataque
+
+Ao conectar o dispositivo atacante à rede, primeiramente precisamos identificar o endereço de rede utilizando o comando `ip a`.
+
+# Varredura da Rede
+
+Para a varredura utilizamos o Nmap, empregando os parâmetros:
+- -sS (TCP SYN Scan)
+- -sV (versão dos serviços)
+- -oN (salvar resultados)
+
+O resultado da varredura revelou IPs interessantes, como o 192.168.100.250, com serviços SMB (445) e RDP (3389).
+
+Utilizamos também o Enum4Linux para enumeração de usuários SMB.
+
+# Preparação das Listas
+
+Utilizamos o CUPP para gerar wordlists baseadas em dados fictícios.
+
+# Execução do Ataque
+
+Utilizamos o Medusa para realizar ataques de força bruta e password spraying.
+
+Foi encontrado acesso válido:
+Usuário: Administrador
+Senha: Tabajiros8670
+
+# Acesso ao Servidor
+
+Com as credenciais, foi possível acessar o servidor e visualizar diretórios sensíveis.
+
+# Correção de Vulnerabilidades
+
+- Segmentação de rede com VLANs
+- Separação da rede de convidados
+- Uso de senhas fortes e aleatórias
+
+# Conclusão
+
+Este projeto demonstra como falhas simples podem comprometer a segurança de um ambiente corporativo, reforçando a importância de boas práticas de segurança da informação.

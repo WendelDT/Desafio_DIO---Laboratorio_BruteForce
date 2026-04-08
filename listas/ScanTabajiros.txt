@@ -1,0 +1,98 @@
+# Nmap 7.95 scan initiated Mon Apr  6 19:16:51 2026 as: /usr/lib/nmap/nmap --privileged -sS -sV -oN ScanTabajiros.txt 192.168.100.0/24
+Nmap scan report for 192.168.100.1
+Host is up (0.18s latency).
+Not shown: 993 closed tcp ports (reset)
+PORT     STATE SERVICE        VERSION
+21/tcp   open  ftp            MikroTik router ftpd 7.12.1
+22/tcp   open  ssh            MikroTik RouterOS sshd (protocol 2.0)
+23/tcp   open  telnet         Linux telnetd
+53/tcp   open  domain         (generic dns response: NOTIMP)
+80/tcp   open  http
+2000/tcp open  bandwidth-test MikroTik bandwidth-test server
+8291/tcp open  unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port53-TCP:V=7.95%I=7%D=4/6%Time=69D43F07%P=x86_64-pc-linux-gnu%r(DNSVe
+SF:rsionBindReqTCP,E,"\0\x0c\0\x06\x81\x84\0\0\0\0\0\0\0\0");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=4/6%Time=69D43F02%P=x86_64-pc-linux-gnu%r(GetRe
+SF:quest,B83,"HTTP/1\.0\x20200\x20OK\r\nCache-Control:\x20max-age=31536000
+SF:\r\nConnection:\x20close\r\nContent-Length:\x202723\r\nContent-Type:\x2
+SF:0text/html\r\nDate:\x20Mon,\x2006\x20Apr\x202026\x2023:17:21\x20GMT\r\n
+SF:Expires:\x20Tue,\x2006\x20Apr\x202027\x2023:17:21\x20GMT\r\nX-Frame-Opt
+SF:ions:\x20sameorigin\r\n\r\n<!doctype\x20html>\n<html\x20lang=\"en\">\n<
+SF:meta\x20charset=\"utf-8\">\n<link\x20rel=\"icon\"\x20href=\"/favicon\.p
+SF:ng\">\n<link\x20rel=\"icon\"\x20href=\"/favicon\.svg\">\n<title>RouterO
+SF:S</title>\n<style>\nbody\x20{\n\x20\x20\x20\x20font-family:\x20Verdana,
+SF:\x20Geneva,\x20sans-serif;\n\x20\x20\x20\x20font-size:\x2011px;\n}\nimg
+SF:\x20{border:\x20none}\nimg:hover\x20{opacity:\x200\.8;}\nh1\x20{\n\x20\
+SF:x20\x20\x20font-size:\x201\.7em;\n\x20\x20\x20\x20display:\x20inline;\n
+SF:\x20\x20\x20\x20margin-bottom:\x2010px;\n}\n#container\x20{\n\x20\x20\x
+SF:20\x20width:\x2070%;\n\x20\x20\x20\x20margin:\x2010%\x20auto;\n}\n#box\
+SF:x20{\n\x20\x20\x20\x20background:\x20linear-gradient\(#ffffff,#f3f3f3\)
+SF:;\n\x20\x20\x20\x20border:\x201px\x20solid\x20#c1c1c1;\n\x20\x20\x20\x2
+SF:0padding:\x2030px;\n}\n\.floater\x20{float:\x20left;\x20margin-right:\x
+SF:2010px;}\n\.floater\x20label\x20{display:\x20block;\x20text-align:\x20c
+SF:enter;}\n\n#login\x20{margin:\x202em\x200\x202em\x200;}\n#login\x20td\x
+SF:20{padding:\x200\x204px\x20")%r(HTTPOptions,14B,"HTTP/1\.0\x20503\x20Se
+SF:rvice\x20Unavailable\r\nCache-Control:\x20no-store\r\nConnection:\x20cl
+SF:ose\r\nContent-Length:\x20109\r\nContent-Type:\x20text/html\r\nDate:\x2
+SF:0Mon,\x2006\x20Apr\x202026\x2023:17:21\x20GMT\r\nExpires:\x200\r\nPragm
+SF:a:\x20no-cache\r\nX-Frame-Options:\x20sameorigin\r\n\r\n<!doctype\x20ht
+SF:ml>\n<html\x20lang=en>\n<title>Error\x20503\x20:\x20unknown\x20method</
+SF:title>\n<h1>Error\x20503\x20:\x20unknown\x20method</h1>\n")%r(RTSPReque
+SF:st,14B,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\nCache-Control:\x2
+SF:0no-store\r\nConnection:\x20close\r\nContent-Length:\x20109\r\nContent-
+SF:Type:\x20text/html\r\nDate:\x20Mon,\x2006\x20Apr\x202026\x2023:17:21\x2
+SF:0GMT\r\nExpires:\x200\r\nPragma:\x20no-cache\r\nX-Frame-Options:\x20sam
+SF:eorigin\r\n\r\n<!doctype\x20html>\n<html\x20lang=en>\n<title>Error\x205
+SF:03\x20:\x20unknown\x20method</title>\n<h1>Error\x20503\x20:\x20unknown\
+SF:x20method</h1>\n");
+MAC Address: 50:DD:2C:00:88:01 (Unknown)
+Service Info: OS: Linux; Device: router; CPE: cpe:/o:mikrotik:routeros, cpe:/o:linux:linux_kernel
+
+Nmap scan report for 192.168.100.197
+Host is up (0.0014s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+MAC Address: 50:A9:72:00:86:00 (Unknown)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.100.199
+Host is up (0.0012s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+MAC Address: 50:62:A3:00:87:00 (Unknown)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.100.250
+Host is up (0.0010s latency).
+Not shown: 993 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+MAC Address: 50:01:F3:00:7F:00 (Unknown)
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.100.196
+Host is up (0.0000060s latency).
+All 1000 scanned ports on 192.168.100.196 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr  6 19:20:05 2026 -- 256 IP addresses (5 hosts up) scanned in 193.92 seconds
