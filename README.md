@@ -1,4 +1,4 @@
-# O Desafio da DIO Laborátorio Brute FOrce
+# O Desafio da DIO - Cibersegurança Riachuelo - Laborátorio Brute Force
 
 # O Laborátorio
 
@@ -11,6 +11,7 @@ A intenção desse cenário é testar ataques em máquinas Windows e Windows Ser
 Para o atacante, foi utilizada uma máquina com Kali Linux e suas ferramentas nativas
 
 ![laboratorio.png](images/laboratorio.png)
+
 Laboratorio representa a empresa ficticia Tabajiros Ltda
 
 O Laborátorio representa a empresa ficticia **Tabajiros Ltda**(homenagem ao nome de uma empresa nostalgica de um antigo programa de humor), o número de telefone, endereços são ficticios, gerados por geradores de dados gratuitos na internet.
